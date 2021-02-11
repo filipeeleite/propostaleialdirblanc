@@ -1,5 +1,6 @@
 :root {
     --color-primary: #004680;
+    --color-primary-hover: #005eac;
     --publicacoes: 570px;
     --anexos: 270px;
     --prod-cult-artesvisuais: 300px;
@@ -11,7 +12,35 @@
     --prod-cult-teatrocirco: 300px;
     --prod-cult-econcultdigital: 300px;
     --prod-cult-musica: 300px;
+    
+}
 
+/* DIRETORIA */
+.menu-subpaginas {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+}
+.menu-subpaginas div {
+    width: 33%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary);
+    transition: background-color .3s ease;
+}
+.menu-subpaginas p {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: -10px;
+    margin-bottom: -6px;
+    margin-left: 18px;
+}
+.menu-subpaginas div:hover {
+    background-color: var(--color-primary-hover);
+    transition: background-color .3s ease;
 }
 
 #publicacoes,

@@ -7,6 +7,7 @@ var prodCultCulturarua = false;
 var prodCultArtesanato = false;
 var prodCultDanca = false;
 var prodCultLiteratura = false;
+var prodCultLiteratura2 = false;
 var prodCultTeatrocirco = false;
 var prodCultEconcultdigital = false;
 var prodCultMusica = false;
@@ -85,6 +86,14 @@ function barAccordion(bloco) {
             abrirBloco();
         }
         prodCultLiteratura = !prodCultLiteratura;
+    }
+    if (bloco == 'prod-cult-literatura2') {
+        if (prodCultLiteratura2) {
+            fecharBloco();
+        } else {
+            abrirBloco();
+        }
+        prodCultLiteratura2 = !prodCultLiteratura2;
     }
     if (bloco == 'prod-cult-teatrocirco') {
         if (prodCultTeatrocirco) {
