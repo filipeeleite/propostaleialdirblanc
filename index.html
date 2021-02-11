@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lei Aldir Blanc - Anápolis</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="/images/b-prefeitura_anapolis.png" alt="">
+            <a>Início</a>
+            <a>Publicações Oficiais</a>
+            <a>Login</a>
+        </div>
+    </header>
+    <main>
+        <img class="logo-aldir" src="/images/aldirblanc.png" alt="">
+        <div class="sobre">
+            <h2>Sobre a Lei Aldir Blanc</h2>
+            <p>A Lei nº14.017 do Governo Federal viabiliza o auxílio à classe artística brasileira que sofre restrições às suas atividades no período pandêmico. Esta lei ganhou o nome Aldir Blanc em homenagem ao compositor e letrista carioca, notabilizado por canções de grande sucesso nacional, e que foi vítima fatal do novo coronavírus no início de maio deste ano. São 3 bilhões de reais da União destinados a Estados e Municípios para o auxílio aos agentes e espaços culturais.</p>
+            <h2>Sobre os incisos</h2>
+            <p>Os principais benefícios previstos na Lei Aldir Blanc estão nos três incisos de seu artigo 2º.</p>
+            <p>Inciso I – Prevê auxílio em três parcelas de 600 reais ou 1,2 mil mães que sustentam sozinhas as despesas da família. As principais exigências para ter acesso a este benefício é não ter sido contemplado pelo auxílio emergencial do Governo Federal e ter atuado comprovadamente no setor há pelo menos dois anos. O auxílio previsto por este inciso é feito pelos Estados.</p>
+            <p>Inciso II – Este auxílio comtempla os espaços culturais que tiveram suas atividades prejudicadas devido as restrições em combate à pandemia. São previstos valores que podem variar de 3 a 10 mil reais, com a finalidade de ajudar nos custos de manutenção como água, luz, telefone, impostos atrasados, pagamento de funcionários e outras despesas. Este inciso é de competência dos Municípios.</p>
+            <p>Inciso III - São auxílios em diferentes modalidades para artistas e grupos. A competência deste inciso são de Estados e Municípios.</p>
+            <div class="bar-accordion">
+                <a>
+                    <div>
+                        <p class="option-title">Clique aqui para acessar a lei</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <h2>Publicações Oficiais</h2>
+        <div class="bar-accordion" id="publicacoes">
+            <a>
+                <div onclick="barAccordion('publicacoes');">
+                    <p class="option-title">Decretos, regulamentações, atas, e regulamentos</p>
+                </div>
+                <p>Aqui ficarão os PDF's de decretos, atas e regulamentos.</p>
+            </a>
+        </div>
+        <div class="bar-accordion" id="anexos">
+            <a>
+                <div onclick="barAccordion('anexos');">
+                    <p class="option-title">Anexos</p>
+                </div>
+                <p>Aqui ficarão os Word's chamados Anexos</p>
+            </a>
+        </div>
+        <!--PRODUTO CULTURAL-->
+        <h2>Produto Cultural</h2>
+        <p>Inicialmente podemos incluir aqui a principal orientação para a aplicação das logomarcas e como cada modalidade vai aplicá-la. As modalidades abaixo só vão estão visíveis para as pessoas quando estiverem completamente preenchidas.</p>
+        <div class="bar-accordion" id="prod-cult-artesvisuais">
+            <a>
+                <div onclick="barAccordion('prod-cult-artesvisuais');">
+                    <p class="option-title">Artes Visuais</p>
+                </div>
+                <p>Aqui ficará o PDF contendo todos os contemplados na modalidade de Artes Visuais - Como um catálogo</p>
+            </a>
+        </div>
+        <div class="bar-accordion" id="prod-cult-audiovisual">
+            <a>
+                <div onclick="barAccordion('prod-cult-audiovisual');">
+                    <p class="option-title">Audiovisual</p>
+                </div>
+                <p>Aqui ficará uma tabela contendo: Nome do proponente e link para o material (youtube)</p>
+                <table>
+                    <tr>
+                        <td>Nome do proponente</td>
+                        <td>Link</td>
+                    </tr>
+                    <tr>
+                        <td>Nome do proponente</td>
+                        <td>Link</td>
+                    </tr>
+                </table>
+            </a>
+        </div>
+        <div class="bar-accordion" id="prod-cult-culturarua">
+            <a>
+                <div onclick="barAccordion('prod-cult-culturarua');">
+                    <p class="option-title">Cultura de Rua/Afro-brasileira</p>
+                </div>
+                <p>Aqui ficará uma tabela contendo: Nome do proponente e link para o material (youtube)</p>
+                <table>
+                    <tr>
+                        <td>Nome do proponente</td>
+                        <td>Link</td>
+                    </tr>
+                    <tr>
+                        <td>Nome do proponente</td>
+                        <td>Link</td>
+                    </tr>
+                </table>
+            </a>
+        </div>
+        <div class="bar-accordion" id="prod-cult-artesanato">
+            <a>
+                <div onclick="barAccordion('prod-cult-artesanato');">
+                    <p class="option-title">Cultura Popular e Artesanato</p>
+                </div>
+                <p>Aqui ficará o PDF contendo todos os contemplados na modalidade de Cultura Popular e Artesanato - Como um catálogo (Fotos das peças inscritas como produto cultural)</p>
+            </a>
+        </div>
+        <div class="bar-accordion" id="prod-cult-danca">
+            <a>
+                <div onclick="barAccordion('prod-cult-danca');">
+                    <p class="option-title">Dança</p>
+                </div>
+                <p>Aqui ficará uma tabela contendo: Nome do proponente e link para o material (youtube)</p>
+                <table>
+                    <tr>
+                        <td>Nome do proponente</td>
+                        <td>Link</td>
+                    </tr>
+                    <tr>
+                        <td>Nome do proponente</td>
+                        <td>Link</td>
+                    </tr>
+                </table>
+            </a>
+        </div>
+        <div class="bar-accordion" id="prod-cult-literatura">
+            <a>
+                <div onclick="barAccordion('prod-cult-literatura');">
+                    <p class="option-title">Literatura</p>
+                </div>
+                <p>Aqui ficará uma tabela contendo: Nome do proponente e link para o material (PDF) que o proponente enviar com a aplicação de logomarcas aprovada</p>
+                <table>
+                    <tr>
+                        <td>Nome do proponente</td>
+                        <td>PDF - link</td>
+                    </tr>
+                    <tr>
+                        <td>Nome do proponente</td>
+                        <td>PDF - link</td>
+                    </tr>
+                </table>
+            </a>
+        </div>
+        <div class="bar-accordion" id="prod-cult-teatrocirco">
+            <a>
+                <div onclick="barAccordion('prod-cult-teatrocirco');">
+                    <p class="option-title">Teatro e Circo</p>
+                </div>
+                <p>Aqui ficará uma tabela contendo: Nome do proponente e link para o material (youtube)</p>
+                <table>
+                    <tr>
+                        <td>Nome do proponente</td>
+                        <td>Link</td>
+                    </tr>
+                    <tr>
+                        <td>Nome do proponente</td>
+                        <td>Link</td>
+                    </tr>
+                </table>
+            </a>
+        </div>
+        <div class="bar-accordion" id="prod-cult-econcultdigital">
+            <a>
+                <div onclick="barAccordion('prod-cult-econcultdigital');">
+                    <p class="option-title">Economia criativa e Cultura digital</p>
+                </div>
+                <p>Aqui ficará uma tabela contendo: Nome do proponente e link para o material (youtube)</p>
+                <table>
+                    <tr>
+                        <td>Nome do proponente</td>
+                        <td>Link</td>
+                    </tr>
+                    <tr>
+                        <td>Nome do proponente</td>
+                        <td>Link</td>
+                    </tr>
+                </table>
+            </a>
+        </div>
+        <div class="bar-accordion" id="prod-cult-musica">
+            <a>
+                <div onclick="barAccordion('prod-cult-musica');">
+                    <p class="option-title">Música</p>
+                </div>
+                <p>Aqui ficará uma tabela contendo: Nome do proponente e link para o material (youtube)</p>
+                <table>
+                    <tr>
+                        <td>Nome do proponente</td>
+                        <td>Link</td>
+                    </tr>
+                    <tr>
+                        <td>Nome do proponente</td>
+                        <td>Link</td>
+                    </tr>
+                </table>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <img src="/images/b-prefeitura_anapolis.png" alt="">
+            <div>
+                <p>Diretoria Municipal de Cultura</p>
+                <p>Praça Bom Jesus, nº101, Setor Central</p>
+                <p>Para mais informações:</p>
+                <p>(62) 3902-1074 / 1111</p>
+                <p>cultura@anapolis.go.gov.br</p>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
