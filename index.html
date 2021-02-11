@@ -10,9 +10,9 @@
     <header>
         <div>
             <img class="main-logo-secretaria" src="/images/a-prefeitura_anapolis.png" alt="">
-            <a>Início</a>
+            <a onclick="alert('Funcionamento como está, clicando volta para a página inicial da cultura')">Início</a>
             <a>Publicações Oficiais</a>
-            <a>Login</a>
+            <a onclick="alert('Funcionamento como está, acesso ao sistema para incluir e remover arquivos na página')">Login</a>
         </div>
     </header>
     <main>
@@ -34,11 +34,12 @@
             </div>
         </div>
         <h2>Publicações Oficiais</h2>
-        <div class="bar-accordion" id="publicacoes">
-            <a>
-                <div onclick="barAccordion('publicacoes');">
-                    <p class="option-title">Decretos, regulamentações, atas, e regulamentos</p>
-                </div>
+
+        <div>
+            <div class="bar-accordion" onclick="barAccordion('publicacoes');">
+                <p class="option-title">Decretos, regulamentações, atas, e regulamentos</p>
+            </div>
+            <div id="publicacoes">
                 <p class="obs">Aqui ficarão os PDF's de decretos, atas e regulamentos.</p>
                 <p class="file-PDF"><span>■</span> Decreto nº 10.646 de 17/08/20 - Regulamentação</p>
                 <p class="file-PDF"><span>■</span> Decreto nº 45.396 de 06/10/20 - Decreto Municipal</p>
@@ -53,156 +54,146 @@
                 <p class="file-PDF"><span>■</span> II Retificação II lote - Inciso III</p>
                 <p class="file-PDF"><span>■</span> Regulamento Inciso II - 3º lote</p>
                 <p class="file-PDF"><span>■</span> Regulamento Inciso III - 3º lote</p>
-            </a>
+            </div>
         </div>
-        <div class="bar-accordion" id="anexos">
-            <a>
-                <div onclick="barAccordion('anexos');">
-                    <p class="option-title">Anexos</p>
-                </div>
+
+        <div>
+            <div class="bar-accordion" onclick="barAccordion('anexos');">
+                <p class="option-title">Anexos</p>
+            </div>
+            <div id="anexos">
                 <p class="obs">Aqui ficarão os Word's chamados Anexos</p>
                 <p class="file-word"><span>■</span> Anexo I - Formulário de Inscrição</p>
                 <p class="file-word"><span>■</span> Anexo II - Termo de autorização e Licença de Direitos Autorais</p>
                 <p class="file-word"><span>■</span> Anexo III - Declaração de Residência (caso o proponente não disponha de documento comprobatório em seu nome)</p>
                 <p class="file-word"><span>■</span> Anexo IV - Termo de compromisso</p>
                 <p class="file-word"><span>■</span> Anexo V - Declaração de inscrição de Música de Domínio Público</p>
-            </a>
+            </div>
         </div>
+
+
+
         <!--PRODUTO CULTURAL-->
         <h2>Produto Cultural</h2>
         <p class="obs">Inicialmente podemos incluir aqui a principal orientação para a aplicação das logomarcas e como cada modalidade vai aplicá-la. As modalidades abaixo só vão estão visíveis para as pessoas quando estiverem completamente preenchidas.</p>
         <p class="file-PDF"><span>■</span> Guia de aplicação de Logomarcas em Produto Cultural</p>
-        <div class="bar-accordion" id="prod-cult-artesvisuais">
-            <a>
-                <div onclick="barAccordion('prod-cult-artesvisuais');">
-                    <p class="option-title">Artes Visuais</p>
-                </div>
+
+        <div>
+            <div class="bar-accordion" onclick="barAccordion('prod-cult-artesvisuais');">
+                <p class="option-title">Artes Visuais</p>
+            </div>
+            <div id="prod-cult-artesvisuais">
                 <p class="obs">Aqui ficará o PDF contendo todos os contemplados na modalidade de Artes Visuais - Como um catálogo</p>
-            </a>
+            </div>
         </div>
-        <div class="bar-accordion" id="prod-cult-audiovisual">
-            <a>
-                <div onclick="barAccordion('prod-cult-audiovisual');">
-                    <p class="option-title">Audiovisual</p>
-                </div>
-                <p class="obs">Aqui ficará como uma grade com vários vídeos de youtube (links que os proponentes enviarão):</p>
-                <table>
-                    <tr>
-                        <td><iframe width="280" height="158" src="https://www.youtube.com/embed/H26tcbGNj6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>CAMPO PARA TÍTULO</p></td>
-                        <td><iframe width="280" height="158" src="https://www.youtube.com/embed/H26tcbGNj6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>CAMPO PARA TÍTULO</p></td>
-                    </tr>
-                    <tr>
-                        <td><iframe width="280" height="158" src="https://www.youtube.com/embed/H26tcbGNj6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>CAMPO PARA TÍTULO</p></td>
-                        <td><iframe width="280" height="158" src="https://www.youtube.com/embed/H26tcbGNj6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>CAMPO PARA TÍTULO</p></td>
-                    </tr>
-                </table>
-            </a>
+
+
+        <div>
+            <div class="bar-accordion" onclick="barAccordion('prod-cult-audiovisual');">
+                <p class="option-title">Audiovisual</p>
+            </div>
+            <div id="prod-cult-audiovisual">
+            <p class="obs">Aqui ficará como uma grade com vários vídeos de youtube (links que os proponentes enviarão):</p>
+            <table>
+                <tr>
+                    <td><iframe width="280" height="158" src="https://www.youtube.com/embed/H26tcbGNj6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>CAMPO PARA TÍTULO</p></td>
+                    <td><iframe width="280" height="158" src="https://www.youtube.com/embed/H26tcbGNj6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>CAMPO PARA TÍTULO</p></td>
+                </tr>
+            </table>
+            </div>
         </div>
-        <div class="bar-accordion" id="prod-cult-culturarua">
-            <a>
-                <div onclick="barAccordion('prod-cult-culturarua');">
-                    <p class="option-title">Cultura de Rua/Afro-brasileira</p>
-                </div>
-                <p class="obs">Aqui ficará como uma grade com vários vídeos de youtube (links que os proponentes enviarão):</p>
-                <table>
-                    <tr>
-                        <td><iframe width="280" height="158" src="https://www.youtube.com/embed/H26tcbGNj6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>CAMPO PARA TÍTULO</p></td>
-                        <td><iframe width="280" height="158" src="https://www.youtube.com/embed/H26tcbGNj6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>CAMPO PARA TÍTULO</p></td>
-                    </tr>
-                    <tr>
-                        <td><iframe width="280" height="158" src="https://www.youtube.com/embed/H26tcbGNj6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>CAMPO PARA TÍTULO</p></td>
-                        <td><iframe width="280" height="158" src="https://www.youtube.com/embed/H26tcbGNj6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>CAMPO PARA TÍTULO</p></td>
-                    </tr>
-                </table>
-            </a>
+
+        <div>
+            <div class="bar-accordion" onclick="barAccordion('prod-cult-culturarua');">
+                <p class="option-title">Cultura de Rua/Afro-brasileira</p>
+            </div>
+            <div id="prod-cult-culturarua">
+            <p class="obs">Aqui ficará como uma grade com vários vídeos de youtube (links que os proponentes enviarão):</p>
+            <table>
+                <tr>
+                    <td><iframe width="280" height="158" src="https://www.youtube.com/embed/H26tcbGNj6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>CAMPO PARA TÍTULO</p></td>
+                    <td><iframe width="280" height="158" src="https://www.youtube.com/embed/H26tcbGNj6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>CAMPO PARA TÍTULO</p></td>
+                </tr>
+            </table>
+            </div>
         </div>
-        <div class="bar-accordion" id="prod-cult-artesanato">
-            <a>
-                <div onclick="barAccordion('prod-cult-artesanato');">
-                    <p class="option-title">Cultura Popular e Artesanato</p>
-                </div>
+
+        <div>
+            <div class="bar-accordion" onclick="barAccordion('prod-cult-artesanato');">
+                <p class="option-title">Cultura Popular e Artesanato</p>
+            </div>
+            <div id="prod-cult-artesanato">
                 <p class="obs">Aqui ficará o PDF contendo todos os contemplados na modalidade de Cultura Popular e Artesanato - Como um catálogo (Fotos das peças inscritas como produto cultural)</p>
-            </a>
+            </div>
         </div>
-        <div class="bar-accordion" id="prod-cult-danca">
-            <a>
-                <div onclick="barAccordion('prod-cult-danca');">
-                    <p class="option-title">Dança</p>
-                </div>
-                <p class="obs">Aqui ficará como uma grade com vários vídeos de youtube (links que os proponentes enviarão):</p>
-                <table>
-                    <tr>
-                        <td><iframe width="280" height="158" src="https://www.youtube.com/embed/H26tcbGNj6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>CAMPO PARA TÍTULO</p></td>
-                        <td><iframe width="280" height="158" src="https://www.youtube.com/embed/H26tcbGNj6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>CAMPO PARA TÍTULO</p></td>
-                    </tr>
-                    <tr>
-                        <td><iframe width="280" height="158" src="https://www.youtube.com/embed/H26tcbGNj6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>CAMPO PARA TÍTULO</p></td>
-                        <td><iframe width="280" height="158" src="https://www.youtube.com/embed/H26tcbGNj6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>CAMPO PARA TÍTULO</p></td>
-                    </tr>
-                </table>
-            </a>
+
+        <div>
+            <div class="bar-accordion" onclick="barAccordion('prod-cult-danca');">
+                <p class="option-title">Dança</p>
+            </div>
+            <div id="prod-cult-danca">
+            <p class="obs">Aqui ficará como uma grade com vários vídeos de youtube (links que os proponentes enviarão):</p>
+            <table>
+                <tr>
+                    <td><iframe width="280" height="158" src="https://www.youtube.com/embed/H26tcbGNj6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>CAMPO PARA TÍTULO</p></td>
+                    <td><iframe width="280" height="158" src="https://www.youtube.com/embed/H26tcbGNj6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>CAMPO PARA TÍTULO</p></td>
+                </tr>
+            </table>
+            </div>
         </div>
-        <div class="bar-accordion" id="prod-cult-literatura">
-            <a>
-                <div onclick="barAccordion('prod-cult-literatura');">
-                    <p class="option-title">Literatura</p>
-                </div>
+
+
+        <div>
+            <div class="bar-accordion" onclick="barAccordion('prod-cult-literatura');">
+                <p class="option-title">Literatura</p>
+            </div>
+            <div id="prod-cult-literatura">
                 <p class="obs">Aqui ficará um PDF contendo todos os contemplados na modalidade de literatura - Como um catálogo</p>
-            </a>
+            </div>
         </div>
-        <div class="bar-accordion" id="prod-cult-teatrocirco">
-            <a>
-                <div onclick="barAccordion('prod-cult-teatrocirco');">
-                    <p class="option-title">Teatro e Circo</p>
-                </div>
-                <p class="obs">Aqui ficará como uma grade com vários vídeos de youtube (links que os proponentes enviarão):</p>
-                <table>
-                    <tr>
-                        <td><iframe width="280" height="158" src="https://www.youtube.com/embed/H26tcbGNj6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>CAMPO PARA TÍTULO</p></td>
-                        <td><iframe width="280" height="158" src="https://www.youtube.com/embed/H26tcbGNj6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>CAMPO PARA TÍTULO</p></td>
-                    </tr>
-                    <tr>
-                        <td><iframe width="280" height="158" src="https://www.youtube.com/embed/H26tcbGNj6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>CAMPO PARA TÍTULO</p></td>
-                        <td><iframe width="280" height="158" src="https://www.youtube.com/embed/H26tcbGNj6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>CAMPO PARA TÍTULO</p></td>
-                    </tr>
-                </table>
-            </a>
+
+
+        <div>
+            <div class="bar-accordion" onclick="barAccordion('prod-cult-teatrocirco');">
+                <p class="option-title">Teatro e Circo</p>
+            </div>
+            <div id="prod-cult-teatrocirco">
+            <p class="obs">Aqui ficará como uma grade com vários vídeos de youtube (links que os proponentes enviarão):</p>
+            <table>
+                <tr>
+                    <td><iframe width="280" height="158" src="https://www.youtube.com/embed/H26tcbGNj6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>CAMPO PARA TÍTULO</p></td>
+                    <td><iframe width="280" height="158" src="https://www.youtube.com/embed/H26tcbGNj6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>CAMPO PARA TÍTULO</p></td>
+                </tr>
+            </table>
+            </div>
         </div>
-        <div class="bar-accordion" id="prod-cult-econcultdigital">
-            <a>
-                <div onclick="barAccordion('prod-cult-econcultdigital');">
-                    <p class="option-title">Economia criativa e Cultura digital</p>
-                </div>
-                <p class="obs">Aqui ficará como uma grade com vários vídeos de youtube (links que os proponentes enviarão):</p>
-                <table>
-                    <tr>
-                        <td><iframe width="280" height="158" src="https://www.youtube.com/embed/H26tcbGNj6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>CAMPO PARA TÍTULO</p></td>
-                        <td><iframe width="280" height="158" src="https://www.youtube.com/embed/H26tcbGNj6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>CAMPO PARA TÍTULO</p></td>
-                    </tr>
-                    <tr>
-                        <td><iframe width="280" height="158" src="https://www.youtube.com/embed/H26tcbGNj6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>CAMPO PARA TÍTULO</p></td>
-                        <td><iframe width="280" height="158" src="https://www.youtube.com/embed/H26tcbGNj6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>CAMPO PARA TÍTULO</p></td>
-                    </tr>
-                </table>
-            </a>
+        <div>
+            <div class="bar-accordion" onclick="barAccordion('prod-cult-econcultdigital');">
+                <p class="option-title">Economia criativa e Cultura digital</p>
+            </div>
+            <div id="prod-cult-econcultdigital">
+            <p class="obs">Aqui ficará como uma grade com vários vídeos de youtube (links que os proponentes enviarão):</p>
+            <table>
+                <tr>
+                    <td><iframe width="280" height="158" src="https://www.youtube.com/embed/H26tcbGNj6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>CAMPO PARA TÍTULO</p></td>
+                    <td><iframe width="280" height="158" src="https://www.youtube.com/embed/H26tcbGNj6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>CAMPO PARA TÍTULO</p></td>
+                </tr>
+            </table>
+            </div>
         </div>
-        <div class="bar-accordion" id="prod-cult-musica">
-            <a>
-                <div onclick="barAccordion('prod-cult-musica');">
-                    <p class="option-title">Música</p>
-                </div>
-                <p class="obs">Aqui ficará como uma grade com vários vídeos de youtube (links que os proponentes enviarão):</p>
-                <table>
-                    <tr>
-                        <td><iframe width="280" height="158" src="https://www.youtube.com/embed/H26tcbGNj6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>CAMPO PARA TÍTULO</p></td>
-                        <td><iframe width="280" height="158" src="https://www.youtube.com/embed/H26tcbGNj6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>CAMPO PARA TÍTULO</p></td>
-                    </tr>
-                    <tr>
-                        <td><iframe width="280" height="158" src="https://www.youtube.com/embed/H26tcbGNj6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>CAMPO PARA TÍTULO</p></td>
-                        <td><iframe width="280" height="158" src="https://www.youtube.com/embed/H26tcbGNj6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>CAMPO PARA TÍTULO</p></td>
-                    </tr>
-                </table>
-            </a>
+        <div>
+            <div class="bar-accordion" onclick="barAccordion('prod-cult-musica');">
+                <p class="option-title">Música</p>
+            </div>
+            <div id="prod-cult-musica">
+            <p class="obs">Aqui ficará como uma grade com vários vídeos de youtube (links que os proponentes enviarão):</p>
+            <table>
+                <tr>
+                    <td><iframe width="280" height="158" src="https://www.youtube.com/embed/H26tcbGNj6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>CAMPO PARA TÍTULO</p></td>
+                    <td><iframe width="280" height="158" src="https://www.youtube.com/embed/H26tcbGNj6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>CAMPO PARA TÍTULO</p></td>
+                </tr>
+            </table>
+            </div>
         </div>
     </main>
     <footer>

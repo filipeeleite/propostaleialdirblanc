@@ -18,7 +18,7 @@ function barAccordion(bloco) {
         document.getElementById(bloco).style.overflowY = 'scroll';
     }
     function fecharBloco() {
-        document.getElementById(bloco).style.height = '48px';
+        document.getElementById(bloco).style.height = '0px';
         document.getElementById(bloco).style.overflowY = 'hidden';
     }
 
