@@ -66,6 +66,9 @@ h2 {
 p {
     margin-bottom: 1rem;
 }
+.obs {
+    background-color: yellow;
+}
 .bar-accordion {
     height: 48px;
     overflow-y: hidden;
