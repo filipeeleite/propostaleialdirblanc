@@ -15,9 +15,11 @@ function barAccordion(bloco) {
 
     function abrirBloco() {
         document.getElementById(bloco).style.height = 'var(--'+ bloco + ')';
+        document.getElementById(bloco).style.overflowY = 'scroll';
     }
     function fecharBloco() {
         document.getElementById(bloco).style.height = '48px';
+        document.getElementById(bloco).style.overflowY = 'hidden';
     }
 
     if (bloco == 'publicacoes') {
