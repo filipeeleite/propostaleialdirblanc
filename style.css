@@ -9,6 +9,7 @@
     --prod-cult-artesanato: 300px;
     --prod-cult-danca: 300px;
     --prod-cult-literatura: 300px;
+    --prod-cult-literatura2: 300px;
     --prod-cult-teatrocirco: 300px;
     --prod-cult-econcultdigital: 300px;
     --prod-cult-musica: 300px;
@@ -43,6 +44,7 @@
     transition: background-color .3s ease;
 }
 
+/* LEI ALDIR BLANC */
 #publicacoes,
 #anexos,
 #prod-cult-artesvisuais,
@@ -51,6 +53,7 @@
 #prod-cult-artesanato,
 #prod-cult-danca,
 #prod-cult-literatura,
+#prod-cult-literatura2,
 #prod-cult-teatrocirco,
 #prod-cult-econcultdigital,
 #prod-cult-musica {
