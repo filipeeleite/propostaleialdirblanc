@@ -14,7 +14,7 @@ var prodCultMusica = false;
 function barAccordion(bloco) {
 
     function abrirBloco() {
-        document.getElementById(bloco).style.height = '30vh';
+        document.getElementById(bloco).style.height = 'var(--'+ bloco + ')';
     }
     function fecharBloco() {
         document.getElementById(bloco).style.height = '48px';

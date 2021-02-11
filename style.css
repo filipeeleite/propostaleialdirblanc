@@ -1,5 +1,17 @@
 :root {
     --color-primary: #004680;
+    --publicacoes: 570px;
+    --anexos: 270px;
+    --prod-cult-artesvisuais: 300px;
+    --prod-cult-audiovisual: 300px;
+    --prod-cult-culturarua: 300px;
+    --prod-cult-artesanato: 300px;
+    --prod-cult-danca: 300px;
+    --prod-cult-literatura: 300px;
+    --prod-cult-teatrocirco: 300px;
+    --prod-cult-econcultdigital: 300px;
+    --prod-cult-musica: 300px;
+
 }
 
 html {
@@ -35,9 +47,17 @@ main {
     display: flex;
     flex-direction: column;
 }
+.main-logo-secretaria {
+    height: 50px;
+    margin: 1rem 0;
+}
 main .logo-aldir {
     width: 60%;
     margin: 1rem auto;
+}
+.footer-logo-secretaria {
+    height: 50px;
+    margin: auto;
 }
 
 h2 {
@@ -72,6 +92,13 @@ p {
 }
 .bar-accordion a {
     text-decoration: none;
+}
+
+.file-PDF span {
+    color: red;
+}
+.file-word span {
+    color: blue;
 }
 td {
     outline: 1px solid var(--color-primary);
