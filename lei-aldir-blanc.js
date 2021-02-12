@@ -5,6 +5,7 @@ var prodCultArtesvisuais = false;
 var prodCultAudiovisual = false;
 var prodCultCulturarua = false;
 var prodCultArtesanato = false;
+var prodCultArtesanato2 = false;
 var prodCultDanca = false;
 var prodCultLiteratura = false;
 var prodCultLiteratura2 = false;
@@ -70,6 +71,14 @@ function barAccordion(bloco) {
             abrirBloco();
         }
         prodCultArtesanato = !prodCultArtesanato;
+    }
+    if (bloco == 'prod-cult-artesanato2') {
+        if (prodCultArtesanato2) {
+            fecharBloco();
+        } else {
+            abrirBloco();
+        }
+        prodCultArtesanato2 = !prodCultArtesanato2;
     }
     if (bloco == 'prod-cult-danca') {
         if (prodCultDanca) {

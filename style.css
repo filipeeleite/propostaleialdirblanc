@@ -7,6 +7,7 @@
     --prod-cult-audiovisual: 300px;
     --prod-cult-culturarua: 300px;
     --prod-cult-artesanato: 300px;
+    --prod-cult-artesanato2: 300px;
     --prod-cult-danca: 300px;
     --prod-cult-literatura: 300px;
     --prod-cult-literatura2: 300px;
@@ -51,6 +52,7 @@
 #prod-cult-audiovisual,
 #prod-cult-culturarua,
 #prod-cult-artesanato,
+#prod-cult-artesanato2,
 #prod-cult-danca,
 #prod-cult-literatura,
 #prod-cult-literatura2,
